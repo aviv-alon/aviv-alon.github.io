@@ -5,6 +5,7 @@
 		@include vendor('transition', 'filter 0.25s ease');
 	}
 
+
 	nav#menu {
     @include vendor('transition', 'background-color #{_duration(transition)} ease-in-out');
     position: fixed;
