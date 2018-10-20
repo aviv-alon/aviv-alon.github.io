@@ -1,0 +1,93 @@
+
+/* Menu */
+
+	#page-wrapper {
+		@include vendor('transition', 'filter 0.25s ease');
+	}
+
+	nav#menu {
+    @include vendor('transition', 'background-color #{_duration(transition)} ease-in-out');
+    position: fixed;
+    z-index: _misc(z-index-base);
+    font-family: _font(family-heading);
+    font-size: 0.8em;
+    font-weight: _font(weight-heading-bold);
+    letter-spacing: _font(kern-heading);
+    line-height: 3em;
+    right: 0.9em;
+    text-transform: uppercase;
+    top: 30vh;
+
+    a {
+      @include vendor('transition', 'background-color #{_duration(transition)} ease-in-out');
+      padding-inline-start: 0;
+      margin-right: 1em;
+      box-sizing: border-box;
+      transform: rotate(270deg);
+      transform-origin: right;
+      display: flex;
+      flex-flow: wrap row;
+
+      justify-content: space-between;
+      padding: 2.8em 1.35em;
+
+
+      &:before {
+        float: right;
+        margin-left: 0.75em;
+      }
+
+    }
+
+	}
+
+  @include breakpoint('<=small') {
+    height: 2.75em;
+    line-height: 2.75em;
+
+    nav {
+      top: 0;
+      right: 0;
+      height: inherit;
+      line-height: inherit;
+
+      a {
+        height: inherit;
+        line-height: inherit;
+
+        &[href="#menu"] {
+          box-shadow: none;
+          padding: 0 1em;
+          border-radius: 0;
+
+          &:hover, &:active {
+            background-color: inherit;
+          }
+        }
+      }
+    }
+  }
+
+  @include breakpoint('<=xsmall') {
+    nav {
+      a {
+        &[href="#menu"] {
+          width: 4em;
+          white-space: nowrap;
+          text-indent: 4em;
+          position: relative;
+
+          &:before {
+            width: inherit;
+            position: absolute;
+            top: 0;
+            left: 0;
+            text-indent: 0;
+            text-align: right;
+            margin-left: 0;
+            padding-right: 1.25em;
+          }
+        }
+      }
+    }
+  }
