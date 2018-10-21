@@ -1,0 +1,33 @@
+
+/* Tags */
+
+	ul.tags {
+		@include vendor('display', 'flex');
+		cursor: default;
+		list-style: none;
+		margin-left: (_size(element-margin) * -0.5);
+		padding-left: 0;
+    flex-wrap: wrap;
+
+		li {
+			padding: 0 0 0 (_size(element-margin) * 0.5);
+			vertical-align: middle;
+		}
+
+
+		@include breakpoint('<=xsmall') {
+			margin-left: 0;
+			width: 100% !important;
+
+			li {
+				> * {
+					padding: 0 (_size(element-margin) * 0.5) 0 (_size(element-margin) * 0.5);
+				}
+				&:first-child {
+					padding-top: 0;
+				}
+
+			}
+
+		}
+	}

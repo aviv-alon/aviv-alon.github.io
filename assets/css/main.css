@@ -1821,6 +1821,29 @@ button,
         width: 100%;
         margin: 0 0 2em 0 !important; } }
 
+/* Tags */
+ul.tags {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  cursor: default;
+  list-style: none;
+  margin-left: -1em;
+  padding-left: 0;
+  flex-wrap: wrap; }
+  ul.tags li {
+    padding: 0 0 0 1em;
+    vertical-align: middle; }
+  @media screen and (max-width: 480px) {
+    ul.tags {
+      margin-left: 0;
+      width: 100% !important; }
+      ul.tags li > * {
+        padding: 0 1em 0 1em; }
+      ul.tags li:first-child {
+        padding-top: 0; } }
+
 .vertical-line {
   position: relative;
   margin: auto;
