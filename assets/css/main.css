@@ -2092,7 +2092,6 @@ nav#menu {
       margin-bottom: -6.5em; } }
   @media screen and (max-width: 980px) {
     #banner {
-      padding: 12em 3em 12.375em 3em ;
       margin-bottom: -4.75em; }
       #banner .inner {
         width: 100%; } }
@@ -2179,7 +2178,9 @@ nav#menu {
       #wrapper > header h2 {
         font-size: 1.25em; }
       #wrapper > header p {
-        font-size: 0.8em; } }
+        font-size: 0.8em; }
+    #wrapper #about img {
+      display: none; } }
 
 .wrapper {
   background-color: #2e3141;
