@@ -10,13 +10,9 @@
     position: relative;
 
     background-color:		_palette(bg);
-
-    // background-image:		linear-gradient(to top, transparentize(_palette(bg), 0.9), transparentize(_palette(bg), 0.2)),
-    // 						url(''../../images/geran-de-klerk.jpg'');
-    background-image:		url('../../images/geran-de-klerk.jpg');
-    // background-image:		linear-gradient(to top, transparentize(_palette(bg), 0.9), transparentize(_palette(bg), 0.2));
-    background-size:		auto,cover;
-    background-position:	center,center;
+    background-image:		url('../../images/footer-background.jpg');
+    // background-image: url('../../images/footer-background.jpf');
+    background-size:	cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 

@@ -17,7 +17,7 @@
     line-height: 3em;
     right: 0.9em;
     text-transform: uppercase;
-    top: 30vh;
+    bottom: 10vh;
 
     a {
       @include vendor('transition', 'background-color #{_duration(transition)} ease-in-out');

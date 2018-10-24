@@ -1956,7 +1956,7 @@ nav#menu {
   line-height: 3em;
   right: 0.9em;
   text-transform: uppercase;
-  top: 30vh; }
+  bottom: 10vh; }
   nav#menu a {
     -moz-transition: background-color 0.2s ease-in-out;
     -webkit-transition: background-color 0.2s ease-in-out;
@@ -2392,9 +2392,8 @@ nav#menu {
 #footer {
   position: relative;
   background-color: #2e3141;
-  background-image: url("../../images/geran-de-klerk.jpg");
-  background-size: auto,cover;
-  background-position: center,center;
+  background-image: url("../../images/footer-background.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   margin-top: -6.5em;
