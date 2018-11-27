@@ -18,7 +18,7 @@ breakpoints({
 window.addEventListener('load', () => {
   window.setTimeout(() =>
     body.classList.remove('is-preload')
-  , 50);
+  , 5);
 });
 
 
